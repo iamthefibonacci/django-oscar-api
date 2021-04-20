@@ -207,7 +207,7 @@ TEMPLATES = [
     },
 ]
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'GMT'
 
 USE_I18N = True
 USE_L10N = True
@@ -224,31 +224,6 @@ OSCAR_THUMBNAILER = 'oscar.core.thumbnails.EasyThumbnails'
 
 APPEND_SLASH=False
 
-
-'''
-REST_FRAMEWORK = {
-    
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-     'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-     'rest_framework_simplejwt.authentication.JWTAuthentication',
-     )
-}
-
-REST_FRAMEWORK = {
-
-    'DEFAULT_PERMISSION_CLASSES': [
-         'rest_framework.permissions.IsAuthenticated',
-         'rest_framework.permissions.IsAdminUser',
-         ],    
-
-    # 'DEFAULT_FILTER_BACKENDS': [
-    #     'django_filters.rest_framework.DjangoFilterBackend'
-    # ],
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ],
-}
-'''
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
